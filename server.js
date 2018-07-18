@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('dev'));
 //cors configuration
 
-app.use(cors({origin:'http://localhost:4200'}))
-
+app.use(cors());
+app.options('*', cors());
 
 
 // Use Routes
